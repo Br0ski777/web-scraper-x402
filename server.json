@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.br0ski777/web-scraper",
   "title": "Web Scraper to Markdown API",
-  "description": "Extract clean text, structured markdown, links, and metadata from any URL. Removes ads, navigation, and boilerplate. Supports single URL and batch mode (up to 10 URLs). Built for RAG pipelines, research agents, content analysis, and summarization workflows. Use when you need to read a web page's content, extract article text, or feed web content into a knowledge base.",
+  "description": "Extract clean markdown from any URL. Removes boilerplate. Batch support. x402 micropayments.",
   "version": "1.0.0",
   "websiteUrl": "https://github.com/Br0ski777/web-scraper-x402",
   "repository": {
