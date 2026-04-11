@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.br0ski777/web-scraper",
+  "name": "io.github.Br0ski777/web-scraper",
   "title": "Web Scraper to Markdown API",
   "description": "Extract clean markdown from any URL. Removes boilerplate. Batch support. x402 micropayments.",
   "version": "1.0.0",
