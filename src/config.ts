@@ -12,7 +12,7 @@ export const API_CONFIG: ApiConfig = {
       price: "$0.005",
       description: "Scrape a URL and convert to clean markdown",
       toolName: "web_scrape_to_markdown",
-      toolDescription: "Use this when you need to read a webpage's content as clean text. Fetches the URL, removes navigation/ads/scripts/boilerplate, returns structured markdown with page title, meta description, author, clean content, word count, character count. Ideal for summarizing articles, feeding content into RAG pipelines, researching topics from web sources. Do NOT use for screenshots or visual rendering — use capture_screenshot instead.",
+      toolDescription: "Use this when you need to read a webpage's content as clean text. Fetches the URL, removes navigation/ads/scripts/boilerplate, returns structured markdown with page title, meta description, author, clean content, word count, character count. Ideal for summarizing articles, feeding content into RAG pipelines, researching topics from web sources. Do NOT use for screenshots — use capture_screenshot. Do NOT use for SEO audit — use seo_audit_page.",
       inputSchema: {
         type: "object",
         properties: {
@@ -27,7 +27,7 @@ export const API_CONFIG: ApiConfig = {
       price: "$0.04",
       description: "Scrape up to 10 URLs in batch",
       toolName: "web_scrape_batch",
-      toolDescription: "Use this when you need to extract content from multiple web pages at once (up to 10). Same output as web_scrape_to_markdown for each URL. Ideal for building research corpora or comparing content across pages. Do NOT use for single URLs.",
+      toolDescription: "Use this when you need to extract content from multiple web pages at once (up to 10). Same output as web_scrape_to_markdown for each URL. Ideal for building research corpora or comparing content across pages. Do NOT use for single URLs — use web_scrape_to_markdown.",
       inputSchema: {
         type: "object",
         properties: {
