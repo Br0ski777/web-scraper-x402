@@ -34,6 +34,25 @@ Do NOT use for screenshots -- use capture_screenshot instead. Do NOT use for SEO
         },
         required: ["url"],
       },
+      outputSchema: {
+        type: "object",
+        properties: {
+          url: { type: "string", description: "URL scraped" },
+          title: { type: "string", description: "Page title" },
+          meta: {
+            type: "object",
+            properties: {
+              description: { type: "string" },
+              author: { type: "string" },
+              keywords: { type: "string" },
+            },
+          },
+          markdown: { type: "string", description: "Clean markdown content" },
+          character_count: { type: "number", description: "Total characters in markdown" },
+          word_count: { type: "number", description: "Total words in markdown" },
+        },
+        required: ["url", "title", "markdown", "word_count"],
+      },
     },
     {
       method: "POST",
@@ -57,6 +76,20 @@ Do NOT use for single URLs -- use web_scrape_to_markdown instead. Do NOT use for
           urls: { type: "array", items: { type: "string" }, description: "Array of URLs (max 10)" },
         },
         required: ["urls"],
+      },
+      outputSchema: {
+        type: "array",
+        description: "Array of scrape results, one per URL",
+        items: {
+          type: "object",
+          properties: {
+            url: { type: "string" },
+            title: { type: "string" },
+            markdown: { type: "string" },
+            word_count: { type: "number" },
+            status: { type: "string", description: "fulfilled or rejected" },
+          },
+        },
       },
     },
   ],
