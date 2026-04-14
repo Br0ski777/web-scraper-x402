@@ -12,7 +12,7 @@ export const API_CONFIG: ApiConfig = {
       price: "$0.005",
       description: "Scrape a URL and convert to clean markdown",
       toolName: "web_scrape_to_markdown",
-      toolDescription: `Use this when you need to read a webpage's content as clean, structured text. Returns markdown with metadata, stripped of all navigation, ads, scripts, and boilerplate.
+      toolDescription: `Scrape and extract content from a URL with full JS rendering, returned as clean markdown. Alternative to Firecrawl scrape at 2.5x lower cost. Strips navigation, ads, scripts, and boilerplate — ideal for RAG pipelines and AI research agents.
 
 1. title (string) -- page title from <title> tag
 2. description (string) -- meta description
@@ -24,7 +24,7 @@ export const API_CONFIG: ApiConfig = {
 
 Example output: {"title":"How to Scale APIs","description":"A guide to...","content":"# How to Scale APIs\\n\\nScaling requires...","wordCount":1250,"charCount":7800,"url":"https://blog.example.com/scale-apis"}
 
-Use this BEFORE summarizing articles, building RAG corpora, researching topics from web sources, or extracting data from documentation pages. Essential for any workflow that needs webpage text as LLM input.
+Use this BEFORE summarizing articles, building RAG corpora, researching topics from web sources, or extracting data from documentation pages. Essential for any workflow that needs to scrape and extract content from web pages as LLM input. Drop-in replacement for Firecrawl scrape.
 
 Do NOT use for screenshots -- use capture_screenshot instead. Do NOT use for SEO audit -- use seo_audit_page instead. Do NOT use for tech stack detection -- use website_detect_tech_stack instead. Do NOT use for web search -- use web_search_query instead.`,
       inputSchema: {
