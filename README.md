@@ -35,8 +35,8 @@ Any x402-aware client ([`@x402/fetch`](https://www.npmjs.com/package/@x402/fetch
 
 | Tool | Method | Path | Price | Description |
 |---|---|---|---|---|
-| `web_scrape_to_markdown` | GET | `/api/scrape` | $0.005 | Scrape a URL and convert to clean markdown |
-| `web_scrape_batch` | POST | `/api/scrape/batch` | $0.04 | Scrape up to 10 URLs in batch |
+| `web_scrape_to_markdown` | GET | `/api/scrape` | $0.012 | Scrape a URL and convert to clean markdown |
+| `web_scrape_batch` | POST | `/api/scrape/batch` | $0.05 | Scrape up to 10 URLs in batch |
 
 ### `web_scrape_to_markdown`
 
