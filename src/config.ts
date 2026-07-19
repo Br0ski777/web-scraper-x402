@@ -9,7 +9,7 @@ export const API_CONFIG: ApiConfig = {
     {
       method: "GET",
       path: "/api/scrape",
-      price: "$0.005",
+      price: "$0.012",
       description: "Scrape a URL and convert to clean markdown",
       toolName: "web_scrape_to_markdown",
       toolDescription: `Scrape and extract content from a URL with full JS rendering, returned as clean markdown. Alternative to Firecrawl scrape at 2.5x lower cost. Strips navigation, ads, scripts, and boilerplate — ideal for RAG pipelines and AI research agents.
@@ -57,7 +57,7 @@ Do NOT use for screenshots -- use capture_screenshot instead. Do NOT use for SEO
     {
       method: "POST",
       path: "/api/scrape/batch",
-      price: "$0.04",
+      price: "$0.05",
       description: "Scrape up to 10 URLs in batch",
       toolName: "web_scrape_batch",
       toolDescription: `Use this when you need to extract clean content from multiple web pages at once (up to 10 URLs). Returns the same structured markdown output as web_scrape_to_markdown for each URL.
